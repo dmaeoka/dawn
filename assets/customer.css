@@ -71,6 +71,13 @@
   }
 }
 
+@media screen and (forced-colors: active) {
+  .customer table {
+    border-top: 0.1rem solid transparent;
+    border-bottom: 0.1rem solid transparent;
+  }
+}
+
 .customer tbody {
   color: rgb(var(--color-foreground));
 }
@@ -156,6 +163,12 @@
   }
 }
 
+@media screen and (forced-colors: active) {
+  .customer tbody tr {
+    border-top: 0.1rem solid transparent;
+  }
+}
+
 .customer tfoot td:first-of-type,
 .customer tfoot td {
   padding-top: 0.6rem;
@@ -198,6 +211,13 @@
   position: absolute;
   left: 0;
   background: rgba(var(--color-foreground), 0.08);
+}
+
+@media screen and (forced-colors: active) {
+  .customer thead::after,
+  .customer tfoot::before {
+    background: CanvasText;
+  }
 }
 
 /* mobile table overrides */
@@ -338,7 +358,7 @@
 }
 
 #recover:target {
-  display: inline;
+  display: block;
 }
 
 #recover:target + div {
@@ -348,6 +368,15 @@
 #recover:target ~ #login,
 #recover:target ~ #login + div {
   display: none;
+}
+
+#recover,
+#login {
+  scroll-margin-top: 20rem;
+}
+
+#recover {
+  margin-bottom: 0;
 }
 
 .activate button[name='decline'],
@@ -455,6 +484,7 @@
   padding: 1.1rem 1.5rem;
   text-decoration: none;
   box-shadow: 0 0 0 0.1rem rgba(var(--color-link), 0.2);
+  border: 0.1rem solid transparent;
   font-size: 1.2rem;
 }
 
