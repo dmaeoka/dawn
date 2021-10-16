@@ -64,6 +64,12 @@
         "type_body_font": {
           "label": "Písmo",
           "info": "Výběr jiného písma může ovlivnit rychlost obchodu. [Zjistěte více o systémových písmech.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)"
+        },
+        "heading_scale": {
+          "label": "Škála velikostí písem"
+        },
+        "body_scale": {
+          "label": "Škála velikostí písem"
         }
       }
     },
@@ -729,7 +735,8 @@
           "label": "Zobrazit obrázky na mobilním zařízení nad sebou"
         },
         "adapt_height_first_image": {
-          "label": "Přizpůsobit výšku sekce velikosti prvního obrázku"
+          "label": "Přizpůsobit výšku sekce velikosti prvního obrázku",
+          "info": "Pokud je tato možnost zaškrtnuta, přepíše nastavení výšky obrázkového banneru."
         },
         "show_text_box": {
           "label": "Zobrazit textové pole na počítači"
@@ -742,6 +749,19 @@
         },
         "show_text_below": {
           "label": "Zobrazit text pod obrázky"
+        },
+        "image_height": {
+          "label": "Výška obrázkového banneru",
+          "options__1": {
+            "label": "Malá"
+          },
+          "options__2": {
+            "label": "Střední"
+          },
+          "options__3": {
+            "label": "Velká"
+          },
+          "info": "Nejlepších výsledků dosáhnete pomocí obrázku s poměrem stran 2:3. [Zjistit více](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
         }
       },
       "blocks": {

@@ -64,6 +64,12 @@
         "type_body_font": {
           "label": "字型",
           "info": "選取不同字型會影響商店速度。[深入瞭解系統字型。](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)"
+        },
+        "heading_scale": {
+          "label": "字型大小縮放"
+        },
+        "body_scale": {
+          "label": "字型大小縮放"
         }
       }
     },
@@ -729,7 +735,8 @@
           "label": "在行動裝置上堆疊圖片"
         },
         "adapt_height_first_image": {
-          "label": "配合的一張圖片尺寸的區段高度"
+          "label": "配合的一張圖片尺寸的區段高度",
+          "info": "檢查時覆寫圖片橫幅高度設定。"
         },
         "show_text_box": {
           "label": "在桌面顯示文字方塊"
@@ -742,6 +749,19 @@
         },
         "show_text_below": {
           "label": "將文字置於圖片下方"
+        },
+        "image_height": {
+          "label": "圖片橫幅高度",
+          "options__1": {
+            "label": "小"
+          },
+          "options__2": {
+            "label": "中等"
+          },
+          "options__3": {
+            "label": "大"
+          },
+          "info": "若想要獲得最佳結果，請使用寬高比為 2:3 的圖片。[瞭解詳情](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
         }
       },
       "blocks": {
