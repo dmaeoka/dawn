@@ -1,10 +1,10 @@
-{{ 'component-cart.css' | asset_url | stylesheet_tag }}
-{{ 'component-totals.css' | asset_url | stylesheet_tag }}
-{{ 'component-price.css' | asset_url | stylesheet_tag }}
-{{ 'component-discounts.css' | asset_url | stylesheet_tag }}
-{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{{ 'component-cart.static.css' | asset_url | stylesheet_tag }}
+{{ 'component-totals.static.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.static.css' | asset_url | stylesheet_tag }}
+{{ 'component-discounts.static.css' | asset_url | stylesheet_tag }}
+{{ 'component-loading-overlay.static.css' | asset_url | stylesheet_tag }}
 
-<script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart.static.js' | asset_url }}" defer="defer"></script>
 
 <cart-items class="page-width{% if cart == empty %} is-empty{% endif %}">
   <div class="title-wrapper-with-link">

@@ -1,7 +1,7 @@
-{{ 'component-cart.css' | asset_url | stylesheet_tag }}
-{{ 'component-totals.css' | asset_url | stylesheet_tag }}
-{{ 'component-price.css' | asset_url | stylesheet_tag }}
-{{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+{{ 'component-cart.static.css' | asset_url | stylesheet_tag }}
+{{ 'component-totals.static.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.static.css' | asset_url | stylesheet_tag }}
+{{ 'component-discounts.static.css' | asset_url | stylesheet_tag }}
 
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>

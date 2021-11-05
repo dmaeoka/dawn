@@ -1,5 +1,5 @@
-{{ 'video-section.css' | asset_url | stylesheet_tag }}
-{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+{{ 'video-section.static.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.static.css' | asset_url | stylesheet_tag }}
 
 <div class="video-section{% unless section.settings.full_width %} page-width{% endunless %}">
   <div{% if section.settings.full_width %} class="page-width"{% endif %}>

@@ -1,4 +1,4 @@
-{{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
+{{ 'section-blog-post.static.css' | asset_url | stylesheet_tag }}
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
   {%- for block in section.blocks -%}
@@ -87,7 +87,7 @@
                 </div>
               </details>
             </share-button>
-            <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+            <script src="{{ 'share.static.js' | asset_url }}" defer="defer"></script>
           </div>
     {%- endcase -%}
   {%- endfor -%}
