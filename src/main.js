@@ -1,24 +1,17 @@
 /**
  * imports
  */
-import "./css/main.scss";
-import Alpine from "alpinejs";
+import "./css/main.scss"
+import Alpine from "alpinejs"
+import Header from "./header"
 
-Alpine.data("header", () => ({
-	open: false,
-
+Alpine.data("announcement", () => ({
 	init() {
-		console.log("Alpine Header");
-	},
-
-	toggleMenu(e) {
-		try {
-			this.open = !this.open;
-		} catch (error) {
-			console.warn(error);
-		}
+		console.log("announcement");
 	},
 }));
+
+Alpine.data("header", Header);
 
 Alpine.data("login", () => ({
 	login: true,
@@ -36,11 +29,6 @@ Alpine.data("login", () => ({
 	},
 }));
 
-Alpine.data("banner", () => ({
-	init() {
-		console.log("Banner");
-	},
-}));
-
 window.Alpine = Alpine;
+
 Alpine.start();

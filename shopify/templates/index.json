@@ -81,6 +81,9 @@
 				"full_width": true
 			}
 		},
+		"bloco_1": {
+			"type": "main-test"
+		},
 		"featured_products": {
 			"type": "featured-collection",
 			"settings": {
@@ -229,6 +232,7 @@
 		"collage",
 		"video",
 		"multi_column",
-		"163481042186c90af2"
+		"163481042186c90af2",
+		"bloco_1"
 	]
 }

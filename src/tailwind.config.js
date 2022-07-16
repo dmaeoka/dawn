@@ -7,8 +7,6 @@
 const path = require("path");
 
 module.exports = {
-	mode: "jit",
-	darkMode: false,
 	theme: {
 		screens: {
 			sm: '640px',
@@ -632,11 +630,8 @@ module.exports = {
 		require('@tailwindcss/line-clamp'),
 		require('@tailwindcss/aspect-ratio'),
 	],
-	purge: {
-		enabled: process.env.NODE_ENV === "production",
-		content: [
-			path.resolve(__dirname, "**/*.{js}"),
-			path.resolve(__dirname, "../shopify/**/*.liquid"),
-		],
-	},
+	content: [
+		path.resolve(__dirname, "**/*.js"),
+		path.resolve(__dirname, "../shopify/**/*.liquid"),
+	],
 };

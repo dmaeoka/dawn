@@ -1,0 +1,29 @@
+<div>Hi there {{ section.settings.color_scheme }}</div>
+
+{% schema %}
+{
+	"name": "Test",
+	"tag": "section",
+	"class": "test-section",
+	"settings": [
+		{
+			"type": "select",
+			"id": "color_scheme",
+			"options": [
+				{
+					"value": "accent-1",
+					"label": "Blabla"
+				}
+			],
+			"default": "accent-1",
+			"label": "Blabla"
+		},
+		{
+			"type": "checkbox",
+			"id": "full_width",
+			"default": true,
+			"label": "Anoher Checkbox"
+		}
+	]
+}
+{% endschema %}
